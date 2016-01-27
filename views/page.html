@@ -1,0 +1,19 @@
+<div class="page">
+    <div class="row">
+        <div class="col-md-5">
+            <img src="{{page.cover.source}}"
+                 alt="Page Image">
+        </div>
+        <div class="col-md-7">
+            <a href="{{page.link}}" target="_blank">
+                <h4>{{page.name}}</h4>
+            </a>
+            <p class="page-category">
+                Category: <span>{{page.category}}</span>
+            </p>
+            <p class="page-likes">
+                Likes: <span>{{page.likes | number}}</span>
+            </p>
+        </div>
+    </div>
+</div>

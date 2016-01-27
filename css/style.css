@@ -1,0 +1,147 @@
+body {
+    padding-top: 60px;
+}
+.vc {
+    line-height: 34px;
+}
+
+#result-container {
+    margin-top: 40px;
+}
+#sidebar {
+    background: #bdc3c7;
+    padding-bottom: 40px;
+}
+#sidebar hr {
+    margin-top: -5px;
+}
+#sidebar .sidebar-section:first-child {
+    margin-top: 15px;
+}
+#sidebar .sidebar-section {
+    margin-top: 30px;
+}
+#sidebar .form-group:not(:first-child) {
+    margin-top: 10px;
+}
+.category {
+    display: inline-block;
+    padding: 3px;
+    border: 1px solid gray;
+    margin: 2px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 12px;
+    border-radius: 3px;
+    text-transform: capitalize;
+}
+
+.category span {
+    color: red;
+    cursor: pointer;
+}
+.category i {
+    display: none;
+}
+.category:hover i {
+    display: inline-block;
+}
+#progress {
+    background: #002B36;
+    padding: 5px;
+    color: white;
+    font-family: 'VT323', Helvetica, sans-serif;
+    font-style: italic;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+#main-container {
+    margin-bottom: 50px;
+}
+#main-container {
+    margin-bottom: 50px;
+}
+.page {
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    margin-top: 10px;
+    height: 100px;
+    overflow: hidden;
+}
+.page img {
+    height: 100px;
+    width: 250px;
+}
+
+#bottom-controls {
+    margin: 30px auto;
+    text-align: center;
+}
+
+/**
+Keyword State **/
+#keyword-state {
+    margin: 15px 0;
+}
+#keyword-state > div{
+    padding: 5px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.6);
+}
+#keyword-state p {
+    font-weight: bold;
+    text-decoration: underline;
+}
+#keywords-done {
+    margin-top: 15px;
+}
+
+/**
+Spinner **/
+@keyframes spinner {
+    to {transform: rotate(360deg);}
+}
+
+@-webkit-keyframes spinner {
+    to {-webkit-transform: rotate(360deg);}
+}
+
+.finished {
+    text-decoration: line-through;
+    color: green;
+}
+.running {
+    min-width: 24px;
+    min-height: 24px;
+}
+
+
+.running:before {
+    content: 'Loading…';
+    position: absolute;
+    /*top: 50%;*/
+    right: 50px;
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    margin-left: -10px;
+}
+
+.running:not(:required):before {
+    content: '';
+    border-radius: 50%;
+    border: 2px solid #f6f;
+    border-top-color: #0e0;
+    border-right-color: #0dd;
+    border-bottom-color: #f90;
+    animation: spinner .6s linear infinite;
+    -webkit-animation: spinner .6s linear infinite;
+}
+.running.finished:before {
+    display: none;
+}
+
+.filename {
+    font-weight: bold;
+}
+
