@@ -18,8 +18,8 @@ try {
 <head>
     <meta charset="UTF-8">
     <title>Facebook Data Extractor</title>
-    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -83,7 +83,7 @@ try {
 
 
 <!-- Load Vendor Scripts -->
-<script src="vendor/jquery/dist/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script>
     $(document).on('click', '#delete', function(e) {
         e.preventDefault();
