@@ -2,7 +2,7 @@
     "use strict";
     angular.module('PageInfo', ['facebook'])
         .config(['FacebookProvider', function(FacebookProvider) {
-            FacebookProvider.init('1479021652314557');
+            FacebookProvider.init('954791237944392');
         }]);
 
 
