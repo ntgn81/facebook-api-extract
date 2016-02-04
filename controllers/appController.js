@@ -40,7 +40,16 @@
             minLikes: 5000,
             requestInterval: 5000,
             filename: new Date().getTime(),
-            categories: ['website', 'athlete', 'community', 'public figure']
+            categories: [
+                'website', 'athlete', 'community', 'public figure', 
+                'blogger', 'author', 'chef', 'business person', 
+                'coach', 'dancer', 'designer', 'entertainer', 
+                'entrepreneur', 'Health/Beauty', 'Health/Wellness Website',
+                'Local Business', 'Personal Trainer', 'Nutritionist',
+                'Professional Services', 'Fitness Center', 'Lifestyle Services',
+                'Personal Coaching', 'Sports & Recreation', 'Sports Instruction', 
+                'Physical Fitness'
+            ]
         };
         $scope.settings = {};
         //$scope.minLikes             = 5000;
