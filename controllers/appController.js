@@ -44,11 +44,10 @@
                 'website', 'athlete', 'community', 'public figure', 
                 'blogger', 'author', 'chef', 'business person', 
                 'coach', 'dancer', 'designer', 'entertainer', 
-                'entrepreneur', 'Health/Beauty', 'Health/Wellness Website',
-                'Local Business', 'Personal Trainer', 'Nutritionist',
-                'Professional Services', 'Fitness Center', 'Lifestyle Services',
-                'Personal Coaching', 'Sports & Recreation', 'Sports Instruction', 
-                'Physical Fitness'
+                'entrepreneur', 'health/beauty', 'health/wellness website',
+                'local business', 'personal trainer', 'nutritionist',
+                'professional services', 'fitness center', 'lifestyle services',
+                'personal coaching', 'sports instruction', 'physical fitness'
             ]
         };
         $scope.settings = {};
