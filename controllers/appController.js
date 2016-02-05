@@ -37,7 +37,7 @@
         $scope.shouldStop           = false;
         // Settings
         var defaultSettings = {
-            minLikes: 5000,
+            minLikes: 4000,
             requestInterval: 5000,
             filename: new Date().getTime(),
             categories: [
