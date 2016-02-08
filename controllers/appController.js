@@ -9,6 +9,7 @@
             'SaveCSV',
             AppController]);
 
+
     function AppController($scope, Facebook, FbService, UtilService, SaveCSV) {
         $scope.facebookReady        = false; // Facebook sdk ready status
         $scope.isLoggedIn           = false;
