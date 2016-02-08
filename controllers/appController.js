@@ -202,7 +202,7 @@
             $scope.validPagesCount = $scope.validPages.length;
         }
         function addPages(pages) {
-            // If pages is empty, call the serachPage method to search with new keyword
+            // If pages is empty, call the searchPage method to search with new keyword
             if(!pages) {
                 searchPage();
                 return;
@@ -244,7 +244,7 @@
             }
             var validPages = $scope.validPages.splice(0, 100);
 
-            SaveCSV.saveToCSV(validPages, $scope.settings.filename)
+            SaveCSV.saveToCSV(validPages, $scope.settings.filename, $scope.keywords)
                 .then(function(res) {
                     saveToCSV();
                 });
