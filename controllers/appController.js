@@ -41,9 +41,9 @@
             requestInterval: 5000,
             filename: new Date().getTime(),
             categories: [
-                'website', 'athlete', 'community', 'public figure', 
-                'blogger', 'author', 'chef', 'business person', 
-                'coach', 'dancer', 'designer', 'entertainer', 
+                'website', 'athlete', 'community', 'public figure',
+                'blogger', 'author', 'chef', 'business person',
+                'coach', 'dancer', 'designer', 'entertainer',
                 'entrepreneur', 'health/beauty', 'health/wellness website',
                 'local business', 'personal trainer', 'nutritionist',
                 'professional services', 'fitness center', 'lifestyle services',
@@ -243,8 +243,7 @@
                 return false;
             }
             var validPages = $scope.validPages.splice(0, 100);
-
-            SaveCSV.saveToCSV(validPages, $scope.settings.filename, $scope.keywords)
+            SaveCSV.saveToCSV(validPages, $scope.settings.filename, $scope.finishedKeywords)
                 .then(function(res) {
                     saveToCSV();
                 });
