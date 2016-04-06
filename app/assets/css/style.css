@@ -9,42 +9,37 @@ body {
     margin-top: 40px;
 }
 #sidebar {
-    background: #bdc3c7;
-    padding-bottom: 40px;
+  background: #f3f3f3;
+  border:1px solid #d6d6d6;
+  padding-bottom: 40px;
 }
 #sidebar hr {
-    margin-top: -5px;
-}
-#sidebar .sidebar-section:first-child {
-    margin-top: 15px;
-}
-#sidebar .sidebar-section {
-    margin-top: 30px;
-}
-#sidebar .form-group:not(:first-child) {
-    margin-top: 10px;
+  margin-top: -5px;
 }
 .category {
-    display: inline-block;
-    padding: 3px;
-    border: 1px solid gray;
-    margin: 2px;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 12px;
-    border-radius: 3px;
-    text-transform: capitalize;
+  background: white;
+  display: inline-block;
+  padding: 3px 5px;
+  border: 1px solid gray;
+  margin: 5px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 12px;
+  border-radius: 3px;
+  text-transform: capitalize;
 }
 
 .category span {
-    color: red;
-    cursor: pointer;
+  color: red;
+  cursor: pointer;
+  margin: 0 5px;
 }
 .category i {
-    display: none;
+    /*display: none;*/
 }
 .category:hover i {
-    display: inline-block;
+  display: inline-block;
+
 }
 #progress {
     background: #002B36;
@@ -117,7 +112,7 @@ Spinner **/
 
 
 .running:before {
-    content: 'Loading…';
+    content: 'Loadingï¿½';
     position: absolute;
     /*top: 50%;*/
     right: 50px;
@@ -145,3 +140,6 @@ Spinner **/
     font-weight: bold;
 }
 
+.breathe {
+  padding: 10px 0;
+}

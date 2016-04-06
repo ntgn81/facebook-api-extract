@@ -7,11 +7,11 @@
 
   <div id="container" class="container">
     <div class="row">
-      <div class="col-md-4" id="sidebar">
+      <div class="col-md-5" id="sidebar">
           <div id="settings" class="sidebar-section">
             <h4>Settings:</h4>
             <hr>
-            <div class="row">
+            <div class="row breathe">
               <div class="form-group">
                 <div class="col-md-6 vc">
                   <label for="min-likes" title="Minimum amount of page likes you want to download.">Minmum Likes:</label>
@@ -28,7 +28,7 @@
                 </div>
               </div>
             </div>
-            <div class="row">
+            <div class="row breathe">
               <div class="col-md-6 vc">
                 <label for="requestInterval" title="Interval between each request sent to Facebook in ms">Interval:</label>
               </div>
@@ -43,7 +43,7 @@
                   id="requestInterval">
               </div>
             </div>
-            <div class="row">
+            <div class="row breathe">
               <div class="col-md-6 vc">
                 <label for="filename" title="Filename you want to save the data.">Filename:</label>
               </div>
@@ -51,31 +51,36 @@
                 <input type="text" ng-model="settings.filename" class="form-control" name="filename" id="filename">
               </div>
             </div>
-            <div class="row">
+            <div class="row breathe">
               <div class="col-md-12 vc">
                 <label for="categories">Categories</label>
+                <a class="pull-right" data-toggle="collapse" data-target="#categoryDefaults" aria-expanded="false" aria-controls="categoryDefaults">
+                  <i class="glyphicon glyphicon-chevron-down"></i>
+                </a>
               </div>
             </div>
-            <div class="row" style="margin-bottom: 20px;">
+            <div class="row collapse breathe" id="categoryDefaults">
               <div class="col-md-12 vc">
-                <div ng-repeat="category in settings.categories" class="category">
-                  {{category}}
-                  <span  ng-click="removeCategory(category)"><i class="glyphicon glyphicon-remove"></i></span>
+                <div class="row">
+                  <div ng-repeat="category in settings.categories" class="category">
+                    {{category}}
+                    <span  ng-click="removeCategory(category)"><i class="glyphicon glyphicon-remove"></i></span>
+                  </div>
+                </div>
+                <div class="row breathe">
+                  <form ng-submit="">
+                    <div class="col-md-8 vc">
+                      <input ng-model="newCategory" class="form-control" type="text" id="add-category" placeholder="New Category Name">
+                    </div>
+                    <div class="col-md-4 vc">
+                      <button ng-click="addCategory(newCategory)" type="submit" class="btn btn-primary">Add</button>
+                    </div>
+                  </form>
                 </div>
               </div>
-            </div>
-            <div class="row">
-              <form ng-submit="">
-                <div class="col-md-8 vc">
-                  <input ng-model="newCategory" class="form-control" type="text" id="add-category" placeholder="New Category Name">
-                </div>
-                <div class="col-md-4 vc">
-                  <button ng-click="addCategory(newCategory)" type="submit" class="btn btn-primary">Add</button>
-                </div>
-              </form>
             </div>
           </div>
-          <div id="counter" class="sidebar-section">
+          <div id="counter" class="sidebar-section breathe">
             <h4>Progress</h4>
             <hr>
             <div id="progress">
@@ -104,7 +109,7 @@
         </div>
       </div>
 
-      <div class="col-md-8" id="main-container">
+      <div class="col-md-7" id="main-container">
         <div id="search-box">
           <form class="form-inline">
             <div class="form-group">

@@ -7,7 +7,7 @@
         scope: {
           page: '='
         },
-        templateUrl: 'directives/templates/page.html'
+        templateUrl: 'app/directives/templates/page.html'
       };
     });
 }());

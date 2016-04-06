@@ -242,6 +242,7 @@
           return false;
         }
         var validPages = $scope.validPages.splice(0, 100);
+
         SaveCSV.saveToCSV(validPages, $scope.settings.filename, $scope.finishedKeywords)
         .then(function(res) {
           saveToCSV();
@@ -249,15 +250,14 @@
       }
 
       function reset() {
-          $scope.pages                = [];
-          $scope.validPages           = [];
-          $scope.pagesCount           = 0;
-          $scope.validPagesCount      = 0;
-          $scope.invalidPages         = [];
-          $scope.invalidPagesCount    = 0;
-          $scope.keywords             = [];
-          $scope.finishedKeywords     = [];
-          // App State
+          $scope.pages               = [];
+          $scope.validPages          = [];
+          $scope.pagesCount          = 0;
+          $scope.validPagesCount     = 0;
+          $scope.invalidPages        = [];
+          $scope.invalidPagesCount   = 0;
+          $scope.keywords            = [];
+          $scope.finishedKeywords    = [];
           $scope.queryStart          = false;
           $scope.queryFinished       = false;
           $scope.validationStart     = false;
@@ -265,7 +265,7 @@
           $scope.saveStart           = false;
           $scope.saveFinished        = false;
           $scope.showPagination      = false;
-          $scope.shouldStop           = false;
+          $scope.shouldStop          = false;
       }
       getSettings();
 
