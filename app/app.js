@@ -6,10 +6,10 @@
 
   .config(['FacebookProvider', function(FacebookProvider) {
 
-    // FacebookProvider.init('954791237944392');
+    FacebookProvider.init('954791237944392');
 
     // app for testing
-    FacebookProvider.init('1774515672761626');
+    // FacebookProvider.init('1774515672761626');
 
   }]);
 
